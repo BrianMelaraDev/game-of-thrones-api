@@ -1,0 +1,95 @@
+body{
+  background-image: url('img/map.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+  color: white;
+  font-size: 5rem;
+}
+a{
+  background-color: black;
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 4rem;
+    text-decoration: none;
+}
+#userInfo{
+  display: contents;
+}
+.well{
+  display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+.well h3{
+  color: black;
+}
+button:active{
+  transform: translateY(4px);
+}
+#email{
+  color: red;
+}
+#listOfCharacters{
+  background-color: rgb(172,147,124,.9);
+  height: 500px;
+}
+h3{
+  display: flex;
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Courgette',sans-serif;
+}
+.messages{
+  list-style: none;
+}
+li{
+  font-size: 3rem;
+    color: floralwhite;
+    text-align: center;
+}
+.well a{
+  font-size: 2rem;
+    border: 0;
+    padding: 1rem;
+    height: 41px;
+    width: 7%;
+    margin-top: 15px;
+}
+.well a:active{
+  transform: translateY(4px);
+}
+#connect{
+  width: 14%;
+}
+ul{
+  height: 300px;
+}
+h2{
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+}
+form{
+  display: flex;
+justify-content: center;
+}
+input{
+  height: 40px;
+font-size: 2rem;
+color: white;
+background-color: rgb(189,200,194,.8);
+outline: none;
+}
+.submit{
+  margin: 0 1rem;
+    border-radius: 27px;
+    width: 8%;
+    font-size: 2rem;
+    outline: none;
+}

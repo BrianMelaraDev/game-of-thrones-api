@@ -1,0 +1,36 @@
+h1{
+  font-family: 'Courgette',sans-serif;
+  font-size: 5rem;
+  color: red;
+}
+button{
+  background-color: #72726a;
+    height: 40px;
+    width: 18%;
+    border-radius: 25px;
+    font-size: 2rem;
+    outline: none;
+}
+button:active{
+  transform: translateY(4px);
+}
+form .form-control{
+  font-family: 'Courgette',sans-serif;
+    height: 59px;
+    font-size: 3rem;
+    background-color: rgb(120,120,112,.6)
+}
+p{
+  font-size: 2rem;
+  color: white;
+}
+label{
+  font-size: 2rem;
+}
+a{
+  color: red !important;
+}
+img{
+  margin: 7rem;
+    margin-left: 39%;
+}

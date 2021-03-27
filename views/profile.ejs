@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <title>21 Savage Fan Site</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1> Profile Page</h1>
+        <a href="/logout" >Logout</a>
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div id="userInfo" class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <strong>id</strong>: <%= user._id %><br>
+                        <strong id="email" >email</strong>: <%= user.local.email %><br>
+                        <strong>password</strong>: <%= user.local.password %>
+                    </p>
+
+                    <a href="/unlink/local" >Unlink</a>
+                <% } else { %>
+                    <a id="connect" href="/connect/local" >Connect Local</a>
+                <% } %>
+
+            </div>
+        </div>
+        <div id="listOfCharacters">
+          <h3>Add your favorite Game of thrones characters and see Which actor plays them and where they live in Game of Thrones</h3>
+          <ul class="messages">
+          <% for(var i=0; i<user.character.name.length; i++) {%>
+            <li class="message">
+              <span><%= user.character.name[i] %></span>
+              <span><%= user.character.location[i] %></span>
+
+              <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+            </li>
+          <% } %>
+          </ul>
+
+          <h2>Add a character in Game of Thrones</h2>
+
+          <form action="/messages" method="POST">
+            <input type="text" placeholder="First Name" name="name">
+            <input type="text" placeholder="Last Name" name="msg">
+            <button class="submit" type="submit">Submit</button>
+          </form>
+        </div>
+
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

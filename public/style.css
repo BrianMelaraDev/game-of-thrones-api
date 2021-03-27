@@ -1,0 +1,68 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+}
+img{
+  height: 200px;
+}
+.hidden{
+  display: none;
+}
+body{
+  background-image: url('img/got.jpg');
+  background-repeat: no-repeat;
+  font-family: 'Courgette',sans-serif;
+}
+h1{
+  font-family: 'Courgette',sans-serif;
+  margin:5rem;;
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+}
+.jumbotron{
+  padding: 0;
+  background-color: rgb(225,225,225,.6)
+}
+img{
+  display: flex;
+  margin-left: 40%;
+  margin-bottom: 8%;
+}
+.container{
+  margin-top: -2%;
+}
+#eggOne{
+  background-image: url(img/eggOne.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border: 0;
+    height: 134px;
+    width: 11%;
+    padding: 0;
+    background-position: center;
+    outline: none;
+    padding-top: 2.4rem;
+}
+#eggTwo{
+  background-image: url('img/eggTwo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:transparent;
+  border: 0;
+  height: 110px;
+  width: 8%;
+  padding: 0;
+  background-position: center;
+  outline: none;
+}
+#eggTwo:active{
+  transform: translateY(4px);
+}
+#eggOne:active{
+  transform: translateY(4px);
+}
+a{
+  color: antiquewhite;
+}

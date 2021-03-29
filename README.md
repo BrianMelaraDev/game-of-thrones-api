@@ -3,6 +3,7 @@ This Full-Stack Application saves your favorite Game of Thrones Characters if yo
  
 &emsp;
 ![Screenshot](gotLogin.png)
+
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Click Here to go to the website!](https://game-of-thronesapi.herokuapp.com/)
 ## How Its Made 
 **Languages used:** Html, CSS, Javascript, Node.js , MongoDB , Express
